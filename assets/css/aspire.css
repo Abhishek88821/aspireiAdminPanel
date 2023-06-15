@@ -23,7 +23,7 @@ body {
     box-sizing: border-box;
      padding: 0;
     margin: 0;
-    background-color: #f7f6f9;
+    background-color: #fff;
     font-family: var(--fontH);
    font-display: optional;
 }
@@ -52,6 +52,8 @@ body {
     background: linear-gradient(90deg, #edd300 56%, #ffffff 0);
     box-shadow: -8px 7px 11px #0408321a;
     border: 2px solid #3b406f;
+    position: relative;
+    z-index: 1;
 }
 
 .sid-bar-div-lst > span, .sid-bar-div-lst > span, .brd-div a, .wel-bck span, .avt-nme + i {
@@ -76,6 +78,8 @@ body {
     background: linear-gradient(90deg, var(--green) 56%, #fff 0 );
     box-shadow: -8px 7px 11px #0408321a;
     border: 2px solid var(--secondary);
+    position: relative;
+    z-index: 1;
 }
 
 .complete {
@@ -94,6 +98,8 @@ body {
     background: linear-gradient(90deg, #00beed 56%, #fff 0 );
     box-shadow: -8px 7px 11px #0408321a;
     border: 2px solid #3b406f;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -137,7 +143,7 @@ body {
 /* side start */
 .sid-bar-div {
     width: 350px;
-    border-right: 1px solid #EDEDED;
+    /* border-right: 1px solid #EDEDED; */
     left: 0;
     padding:  10px 0;
     top: 0;
@@ -244,7 +250,13 @@ body {
 /* inn start */
 .inn-div {
     margin-left: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 .das-box {
     padding: 20px 0;
 }
@@ -366,6 +378,10 @@ body {
 /* inn end */
 
 /* table start */
+
+.dashboard-div {
+    background-color: #f7f6f9;
+}
 
 .dashboard-div-table{
     border: 2px solid #e3e3e3;
