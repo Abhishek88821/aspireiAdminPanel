@@ -44,7 +44,7 @@ body {
 }
 
 
-.avt-nme + i, .avt-nme , .sid-bar-div-lst ul > li a span, .wel-bck h1 {
+.avt-nme , .sid-bar-div-lst ul > li a span, .wel-bck h1 {
     color: var(--fifth);
 }
 
@@ -54,7 +54,7 @@ body {
     border: 2px solid #3b406f;
 }
 
-.sid-bar-div-lst > span, .sid-bar-div-lst > span, .brd-div a, .wel-bck span {
+.sid-bar-div-lst > span, .sid-bar-div-lst > span, .brd-div a, .wel-bck span, .avt-nme + i {
     color: var(--text);
 }
 
