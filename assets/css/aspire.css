@@ -224,23 +224,23 @@ body {
 }
 
 
-.sid-bar-div-box::-webkit-scrollbar-track, .dashboard-div-table::-webkit-scrollbar-track
+.sid-bar-div-box::-webkit-scrollbar-track, .dashboard-div-table::-webkit-scrollbar-track, .dashboard-div-table table::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px #cbcbcb;
 	background-color: #fff;
 }
 
-.sid-bar-div-box::-webkit-scrollbar, .dashboard-div-table::-webkit-scrollbar
+.sid-bar-div-box::-webkit-scrollbar, .dashboard-div-table::-webkit-scrollbar, .dashboard-div-table table::-webkit-scrollbar
 {
 	width: 0px;
 	background-color: #F5F5F5;
     transition: var(--ts);
 }
-.sid-bar-div-box:hover:-webkit-scrollbar, .dashboard-div-table:hover:-webkit-scrollbar {
+.sid-bar-div-box:hover:-webkit-scrollbar, .dashboard-div-table:hover:-webkit-scrollbar, .dashboard-div-table table:hover:-webkit-scrollbar {
     width: 5px;
 }
 
-.sid-bar-div-box::-webkit-scrollbar-thumb, .dashboard-div-table::-webkit-scrollbar-thumb
+.sid-bar-div-box::-webkit-scrollbar-thumb, .dashboard-div-table::-webkit-scrollbar-thumb, .dashboard-div-table table::-webkit-scrollbar-thumb
 {
 	background-color: #4b4b4c;
 }
