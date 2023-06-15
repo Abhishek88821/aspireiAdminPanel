@@ -388,7 +388,7 @@ body {
     border-radius: 10px;
     background: #fff;
     overflow-y: scroll;
-    min-height: 600px;
+    max-height: 600px;
 }
 
 .dashboard-div-table table tbody > tr:last-child > td {
