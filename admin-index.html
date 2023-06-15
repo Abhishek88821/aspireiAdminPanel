@@ -55,9 +55,19 @@
     <section class="adm-div position-relative">
         <!-- sidebar start -->
         <section class="sid-bar-div position-fixed">
-            <div class="log-div">
+            <div class="d-flex align-items-center" >
+                <div class="mobile-bar me-2 d-block d-md-none" >
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="log-div">
                 <img src="assets/img/logo.png" class="img-fluid w-100" alt="Logo" title="Logo" />
+                <div class="avt-img me-3">
+                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="w-100 img-fluid" title="Avtar" alt="Avtar" />
+                </div>
             </div>
+            
+        </div>
             <div class="sid-bar-div-box">
                 <div class="sid-bar-div-lst position-relative  pb-md-2">
                     <span>Main Menu</span>
@@ -130,18 +140,18 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-6 col-12">
                             <div class="avt-div position-relative float-end">
-                                <div class="avt-box d-flex align-items-center">
+                                <div class="avt-box d-md-flex d-none align-items-center">
                                     <div class="avt-img me-3">
                                         <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                             class="w-100 img-fluid" title="Avtar" alt="Avtar" />
                                     </div>
-                                    <span class="avt-nme me-2">Abhishek</span>
-                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span class="avt-nme me-2 d-none d-md-block">Abhishek</span>
+                                    <i class="fa-solid fa-angle-down  d-none d-md-block"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-12 col-lg-12 col-md-12">
-                            <div class="brd-div d-flex align-items-center text-white py-md-3">
+                            <div class="brd-div d-flex align-items-center text-white py-md-3 py-2">
                                 <a href="admin-index.html" role="link" class="text-decoration-none pe-md-2">
                                     Dashboard
                                 </a>/ User
@@ -179,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 d-md-block d-none">
                             <div class="das-box-1-div  d-flex align-items-center justify-content-between" role="button" >
                                 <div class="das-box-1-div-1">
                                     <span>Created User</span>
@@ -192,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12  d-md-block d-none">
                             <div class="das-box-1-div  d-flex align-items-center justify-content-between"  role="button" >
                                 <div class="das-box-1-div-1">
                                     <span>SMS Portal</span>
@@ -209,16 +219,16 @@
                 </div>
             </div>
             <!-- website list start -->
-            <div class="dashboard-div position-relative py-md-4 px-lg-4" >
+            <div class="dashboard-div position-relative py-md-4 py-3 px-lg-4" >
                 <div class="container-fluid" >
                     <div class="row" >
                         <div class="col-lg-12 col-md-12 col-12" >
                             <div class="dashboard-div-table" >
                                 <div class="dashboard-div-table-box d-flex align-items-center justify-content-between bg-white" >
-                                    <h2 class="mb-0" >Website's List</h2>
-                                    <a href="javascript:" role="link" class="text-decoration-none" ><i class="fa fa-plus me-md-2" ></i>Create New</a>
+                                    <h2 class="mb-0 me-2" >Website's List</h2>
+                                    <a href="javascript:" role="link" class="text-decoration-none" ><i class="fa fa-plus me-md-2 me-1" ></i>Create New</a>
                                 </div>
-                                <table class="table table-responsive table-bordered mb-0" >
+                                <table class="table table-responsive table-bordered" >
                                     <thead>
                                         <tr>
                                             <th class="text-nowrap" >Sr. No.</th>
