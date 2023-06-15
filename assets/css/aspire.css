@@ -390,7 +390,7 @@ body {
 }
 
 .dashboard-div-table table tbody > tr:last-child > td {
-    border: none;
+    border-bottom: 1px solid #fff;
 }
 
 .dashboard-div-table  table {
