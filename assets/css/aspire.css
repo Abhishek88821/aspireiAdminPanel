@@ -387,6 +387,8 @@ body {
     border: 2px solid #e3e3e3;
     border-radius: 10px;
     background: #fff;
+    overflow-y: scroll;
+    min-height: 600px;
 }
 
 .dashboard-div-table table tbody > tr:last-child > td {
@@ -401,6 +403,9 @@ body {
 }
 .dashboard-div-table table > thead {
     background-color: #f7f6f9;
+    position: sticky;
+    top: -2px;
+    z-index: 4;
 }
 .dashboard-div-table table th {
     font-size: 15px;
