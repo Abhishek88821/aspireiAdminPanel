@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="theme-color" content="" />
+    <meta name="Robots" content="index,follow" />
+    <meta name="Coverage" content="Worldwide" />
+    <meta name="Keywords" content="" />
+    <meta name="description" content="">
+    <meta name="Abstract" content="" />
+    <meta name="subject" content="" />
+    <meta name="format-detection" content="" />
+    <meta name="url" content="#" />
+    <meta name="Identifier-URL" content="#" />
+    <meta name="Owner" content="" />
+    <meta name="Author" content="" />
+    <meta name="Designer" content="" />
+    <meta name="Copyright" content="" />
+    <link rel="canonical" href="#" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="#" />
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+        <link href="assets/css/aspire.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/mobile.css" type="text/css" rel="Stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/aspire.js"></script>
+
+</head>
+
+<body>
+    <section class="adm-div position-relative">
+        <!-- sidebar start -->
+        <section class="sid-bar-div position-fixed">
+            <div class="log-div">
+                <img src="assets/img/logo.png" class="img-fluid w-100" alt="Logo" title="Logo" />
+            </div>
+            <div class="sid-bar-div-box">
+                <div class="sid-bar-div-lst position-relative  pb-md-2">
+                    <span>Main Menu</span>
+                    <ul class="list-unstyled mt-md-4  mb-md-4">
+                        <li class="active">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="Dashboard">
+                                <i class="fa fa-home me-2 mb-1"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="Users">
+                                <i class="fa fa-user  mb-1 me-2"></i>Users
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="Pages">
+                                <i class="fa fa-link mb-1 me-2"></i>Pages<span>20</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="SMTP Portal">
+                                <i class="fa fa-envelope mb-1 me-2"></i>SMTP Portal
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="SMS">
+                                <i class="fa fa-comments mb-1 me-2"></i>SMS Portal
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sid-bar-div-lst position-relative pt-md-4">
+                    <span class="">Preferences</span>
+                    <ul class="list-unstyled mt-md-4  mb-md-4">
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="Progressive Web Application">
+                                <i class="fa fa-rocket me-2"></i>Progressive Web Application
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:" target="_self" class="text-decoration-none" role="link"
+                                aria-label="Dashboard">
+                                <i class="fa fa-credit-card me-2"></i>Payment Gateway<span>4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- sidebar end -->
+        <!-- inn start -->
+        <section class="inn-div position-relative">
+            <div class="das-box position-relative px-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+                            <div class="sea-bar-div d-flex align-items-center position-relative">
+                                <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                                <input type="text" placeholder="Search Something Here..." id="search"
+                                    class="form-control" />
+                                <i class="fa-solid fa-arrow-right position-absolute"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+                            <div class="avt-div position-relative float-end">
+                                <div class="avt-box d-flex align-items-center">
+                                    <div class="avt-img me-3">
+                                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            class="w-100 img-fluid" title="Avtar" alt="Avtar" />
+                                    </div>
+                                    <span class="avt-nme me-2">Abhishek</span>
+                                    <i class="las la-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-12 col-md-12">
+                            <div class="brd-div d-flex align-items-center text-white py-md-3">
+                                <a href="admin-index.html" role="link" class="text-decoration-none pe-md-2">
+                                    Dashboard
+                                </a>/ User
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="wel-bck">
+                                <h1>Welcome back, Abhishek</h1>
+                                <span>Manage your integrated website admin panel and get work effectiveness for all your
+                                    team members in the company</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="exp-data d-flex align-items-center justify-content-end">
+                                <a href="javascript:" role="link" class="text-decoration-none"><i
+                                        class="fa-solid fa-file-export me-1"></i> Export Data</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="das-box-div position-relative px-md-4">
+                <div class="container-fluid">
+                    <div class="row das-box-1">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="das-box-1-div d-flex align-items-center justify-content-between"  role="button" >
+                                <div class="das-box-1-div-1">
+                                    <span>Created Website</span>
+                                    <h2>3930</h2>
+                                </div>
+                                <div class="das-box-1-div-2 position-relative">
+                                    <div class="das-icn" >
+                                       <img src="assets/img/website.png" class="img-fluid" alt="Website" title="Website" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="das-box-1-div  d-flex align-items-center justify-content-between" role="button" >
+                                <div class="das-box-1-div-1">
+                                    <span>Created User</span>
+                                    <h2>6920</h2>
+                                </div>
+                                <div class="das-box-1-div-2 position-relative">
+                                    <div class="das-icn" >
+                                        <img src="assets/img/user.png" class="img-fluid" alt="User" title="User" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="das-box-1-div  d-flex align-items-center justify-content-between"  role="button" >
+                                <div class="das-box-1-div-1">
+                                    <span>SMS Portal</span>
+                                    <h2>1230</h2>
+                                </div>
+                                <div class="das-box-1-div-2 position-relative">
+                                    <div class="das-icn" >
+                                        <img src="assets/img/sms.png" class="img-fluid" alt="SMS" title="SMS" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- website list start -->
+            <div class="dashboard-div position-relative mt-md-4 px-lg-4" >
+                <div class="container-fluid" >
+                    <div class="row" >
+                        <div class="col-lg-12 col-md-12 col-12" >
+                            <div class="dashboard-div-table" >
+                                <div class="dashboard-div-table-box d-flex align-items-center justify-content-between bg-white" >
+                                    <h2 class="mb-0" >Website's List</h2>
+                                    <a href="javascript:" role="link" class="text-decoration-none" ><i class="fa fa-plus me-md-2" ></i>Create New</a>
+                                </div>
+                                <table class="table table-responsive table-bordered" >
+                                    <thead>
+                                        <tr>
+                                            <th class="text-nowrap" >Sr. No.</th>
+                                            <th>Website</th>
+                                            <th>Url</th>
+                                            <th style="width: 100px;" class="text-center" >SMS</th>
+                                            <th  style="width: 100px;"  class="text-center" >PWA</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Bakers Oven</td>
+                                            <td><a href="https://aspireindia.com/" target="_blank" class="text-decoration-none" role="link" >https://aspireindia.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-on" role="button"  ></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="complete" >
+Completed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Bakingo</td>
+                                            <td><a href="https://bakingo.com/" target="_blank" class="text-decoration-none" role="link" >https://bakingo.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-on" role="button"  ></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="complete" >
+Completed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Aspire India</td>
+                                            <td><a href="https://aspireindia.com/" target="_blank" class="text-decoration-none" role="link" >https://aspireindia.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-on" role="button"  ></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="complete" >
+Completed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>4DoctorMarketing</td>
+                                            <td><a href="https://aspireindia.com/" target="_blank" class="text-decoration-none" role="link" >https://4doctormarketing.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-on" role="button"  ></i>
+                                            </td>
+                                            <td>
+                                                <span class="pending" >
+                                                    Pending
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Hair Transplant</td>
+                                            <td><a href="https://hairtransplant.com/" target="_blank" class="text-decoration-none" role="link" >https://hairtransplant.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="complete" >
+Completed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Trizoom</td>
+                                            <td><a href="https://trizoom.com/" target="_blank" class="text-decoration-none" role="link" >https://trizoom.in</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-on" role="button"  ></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="pending" >Pending
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Nomadz Digital</td>
+                                            <td><a href="https://nomadz.com/" target="_blank" class="text-decoration-none" role="link" >https://nomadz.com</a></td>
+                                            <td class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td  class="text-center" >
+                                                <i class="fa-solid fa-toggle-off"></i>
+                                            </td>
+                                            <td>
+                                                <span class="complete" >
+Completed
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:" class="text-decoration-none edit" role="link" >Edit</a>
+                                            </td>
+                                        </tr>
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- website list end -->
+        </section>
+        <!-- inn end -->
+    </section>
+
+</body>
+
+</html>
