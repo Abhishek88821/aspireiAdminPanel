@@ -64,6 +64,7 @@ border-width: 1px;
     }
 
     .sid-bar-div {
+        height: auto!important;
         background: linear-gradient(180deg, white 58px, transparent 0);
     }
     .sid-bar-div-box {
