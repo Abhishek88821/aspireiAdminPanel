@@ -53,16 +53,39 @@ border-width: 1px;
 
 
 @media only screen and (max-width: 568px) {
-    .sid-bar-div-box {
-        display: none;
+    
+    .sid-bar-div-lst ul > li.active::before {
+        left: -4px;
+        border-radius: 0 20px 20px 0;
+    }
+    .sid-bar-div-lst > span {
+        margin-bottom: 12px;
+        display: block;
     }
 
+    .sid-bar-div {
+        background: linear-gradient(180deg, white 58px, transparent 0);
+    }
+    .sid-bar-div-box {
+        border-top: 1px solid #b6b8ca45;
+        background: #fff;
+        height: 100vh;
+        left: -100%;
+        position: fixed;
+        top: 58px;
+        width: 100%;
+        transition: var(--ts);
+    }
+    .sid-bar-div-box.open {
+        left: 0;
+    }
+    
     .log-div {
         margin: -5px 0 0 -12px;
-        width: 220px;
+        width: 210px;
     }
 
-    .sea-bar-div input[type="text"], .sea-bar-div {
+    .sea-bar-div input[type="text"], .sea-bar-div, .sid-bar-div  {
         width: 100%;
     }
 
@@ -112,11 +135,11 @@ border-width: 1px;
     .avt-img{
         position: absolute;
         top: 8px;
-        right: 10px;
+        right: 0px;
     }
     
     /* fonts start */
-    .brd-div, .exp-data a {
+    .brd-div, .exp-data a, .sid-bar-div-lst > span {
         font-size: 12px;
     }
     .sea-bar-div input[type="text"], .sid-bar-div-lst ul > li a, .wel-bck span, .dashboard-div-table table td, .avt-nme, .dashboard-div-table-box a, .dashboard-div-table table th {

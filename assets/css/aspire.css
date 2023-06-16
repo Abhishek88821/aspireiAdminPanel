@@ -143,6 +143,7 @@ body {
 /* side start */
 .sid-bar-div {
     width: 350px;
+    z-index: 10;
     /* border-right: 1px solid #EDEDED; */
     left: 0;
     padding:  10px 0;
@@ -384,12 +385,16 @@ body {
 }
 
 .dashboard-div-table{
-    border: 2px solid #e3e3e3;
-    border-radius: 10px;
-    background: #fff;
     overflow-y: scroll;
     max-height: 600px;
 }
+
+.dashboard-div-box {
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    background: #fff;
+}
+
 
 .dashboard-div-table table tbody > tr:last-child > td {
     border-bottom: 1px solid #fff;
@@ -459,3 +464,7 @@ body {
 
 
 /* table end */
+
+
+/* menu svg start */  
+/* menu svg end */
