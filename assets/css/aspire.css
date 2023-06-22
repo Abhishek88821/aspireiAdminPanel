@@ -141,11 +141,6 @@ body {
 /* hidden end */
 
 /* side start */
-.mobile-bar {
-	    width: 22px;
-    height: 22px;
-    margin-top: 0px;
-}
 .sid-bar-div {
     width: 350px;
     z-index: 10;
